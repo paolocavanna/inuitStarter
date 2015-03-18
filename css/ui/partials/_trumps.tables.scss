@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .table { width: 100% }
-.table--data { border: 1px solid #ddd }
+.table--data { border: 1px solid $base-ui-color }
 .table--data th, .table--data td { padding: .35em }
 .table--data th { font-weight: bold }
-.table--data tbody tr:nth-child(odd) { background-color: #999 }
+.table--data tbody tr:nth-child(odd) { background-color: $second-ui-color }

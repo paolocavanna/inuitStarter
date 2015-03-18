@@ -55,11 +55,3 @@ $secondary-shadow: #C6C6C6;
 }
 
 .btn ~ .btn { margin-left: $inuit-base-spacing-unit--small }
-
-.btn-wrapper--center { text-align: center; }
-.btn-wrapper--right { text-align: right; }
-.btn-wrapper--fixed { position: absolute; left: 0; right: 0;
-	.p &, .box & { left: $inuit-base-spacing-unit; right: $inuit-base-spacing-unit }
-}
-// .btn-wrapper--bottom { bottom: ($inuit-base-spacing-unit - 2px) }
-.btn-wrapper--bottom { bottom: 20px }

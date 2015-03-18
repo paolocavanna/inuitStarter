@@ -2,11 +2,8 @@
 	$GENERIC
 \*------------------------------------*/
 
-@include fontFace('HelveticaNeueLTStd-Bd','fonts/2C4792_0_0', $weight: bold);
-@include fontFace('HelveticaNeueLT-Roman','fonts/2C4792_1_0');
-@include fontFace('HelveticaNeueLTStd-BdCn','fonts/2C4792_2_0');
-@include fontFace('HelveticaNeueLTStd-Cn','fonts/2C4792_3_0');
-@include fontFace('comauico','fonts/comauico-regular-webfont');
+@include fontFace('fontName','path/to/font', $weight: bold);
+@include fontFace('fontName','path/to/font');
 
 
 *::selection { @include selection }
@@ -21,16 +18,12 @@ a { color: inherit; text-decoration: none;
 [class*="js-"]:focus { outline: 0 none }
 
 iframe, object, video { display: block; width: 100% }
-p:last-child, p:only-child { margin-bottom: 0 }
 
-main, .main-content { position: relative }
 button { -webkit-appearance: none }
 
-.close { position: absolute; right: 0; top: 0; width: 24px; height: 24px; line-height: 24px; border: 1px solid $base-ui-color; border-radius: 100%; text-align: center; z-index: 30 }
-.reset { font-family: $brand-mono; line-height: 1.5; width: 1.5em; height: 1.5em; border-radius: 100%;
-	color: $brand-dark; background: $main-bg-color; text-align: center;
-}
-.hidden, .is-human { display: none !important }
+main, .main-content { position: relative }
+
+.hidden { display: none !important }
 
 /*------------------------------------*\
 	$PRINT STYLES

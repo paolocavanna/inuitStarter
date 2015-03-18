@@ -16,8 +16,3 @@ h1, h2, h3, h4, h5, h6, ul, dl, ol, li, p { margin-top: 0; margin-bottom: .5em }
 .underline { border-bottom: 1px solid }
 
 .text--truncated { @include textOverflow(); }
-
-@mixin highlighted { border-bottom: 0.14em solid; padding-bottom: .2em; display: inline-block; }
-.highlighted { @include highlighted(); }
-
-.valuable__copy { @include inuit-font-size(22px, 1.5); }

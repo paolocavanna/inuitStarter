@@ -2,14 +2,5 @@
     $LAYER
 \*------------------------------------*/
 .ui-blocker { position: fixed; left: 0; right: 0; top: 0; bottom: 0; z-index: 9000; background-color: rgba(0,0,0,.5) }
-.layer { display: none; padding-left: $inuit-base-spacing-unit--small; padding-right: $inuit-base-spacing-unit--small; padding-top: $inuit-base-spacing-unit;
-	.logo-wrapper { position: absolute; right: 0; top: -$inuit-base-spacing-unit;
-		> img { width: 75px }
-	}
-}
-.layer__inner {
-	.ui-message--response {
-		background-color: $main-bg-color; color: $brand-dark; padding: $inuit-padding;
-		@include centerObject(absolute, "all");
-	}
-}
+.layer { display: none; padding: $inuit-base-spacing-unit; }
+

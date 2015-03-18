@@ -1,8 +1,57 @@
 /*------------------------------------*\
-    $SOCIAL SHARING
+    $SOCIAL SHARING:
+    CSS to style ShareThis icons
 \*------------------------------------*/
 
-.list--social > li { margin-right: .5em;
-	&:last-child { margin-right: 0 }
+.share-widget {
+	.share-el { height: 35px }
+	.stButton {
+		.chicklets, .stLarge { background-image: url("../img/bg_social_icons_sprite.png") !important; background-repeat: no-repeat }
+		.chicklets { width: 20px; height: 20px; padding: 0; display:inline-block; margin: 0 2px; }
+		.stLarge { width: 35px; height: 35px; overflow: hidden; display: inline-block; margin:0 4px; }
+	}
+
+	.st_facebook_large .stLarge { background-position: 0 0 }
+
+	.st_twitter_large .stLarge { background-position: 0 -74px }
+
+	.st_googleplus_large .stLarge { background-position: 0 -133px }
+
+	.st_instagram_large .stLarge { background-position: 0 -200px }
+
+	.st_email_large .stLarge { background-position: 0 -267px }
 }
-.sharing-tool { color: $brand-color; font-size: $inuit-heading-size-5; font-family: $brand-face-bold }
+
+.follow-el {
+	width: 35px; height: 35px; overflow: hidden; display: inline-block; margin:0 4px;
+	background-image: url("../img/bg_social_icons_sprite.png") !important; background-repeat: no-repeat;
+
+	&.facebook { background-position: 0 -628px }
+	&.twitter { background-position: 0 -696px }
+	&.instagram { background-position: 0 -763px }
+	&.youtube { background-position: 0 -829px }
+
+}
+
+
+.stButton {
+	&.facebook { background-position: 0 -341px }
+	&.twitter { background-position: 0 -401px }
+	&.googleplus { background-position: 0 -460px }
+	&.instagram { background-position: 0 -521px }
+	&.email { background-position: 0 -581px }
+}
+
+.no-touch {
+	.stButton .stLarge:hover,
+	.stButton .chicklets:hover,
+	.follow-el:hover { opacity: .75 }
+
+	.share-widget {
+		.st_facebook_large .stLarge:hover { background-position: 0 0 }
+		.st_twitter_large .stLarge:hover { background-position: 0 -74px }
+		.st_googleplus_large .stLarge:hover { background-position: 0 -133px }
+		.st_instagram_large .stLarge:hover { background-position: 0 -200px }
+		.st_email_large .stLarge:hover { background-position: 0 -267px }
+	}
+}

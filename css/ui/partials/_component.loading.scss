@@ -2,31 +2,9 @@
     $LOADING
 \*------------------------------------*/
 
-.loading { width: 32px; height: 32px; padding: $inuit-base-spacing-unit--small; position: absolute; left: 50%; top: 50%;
+.loading { padding: $inuit-base-spacing-unit--small;
+	position: absolute; left: 50%; top: 50%;
+	width: 32px; height: 32px;
 	margin: -16px 0 0 -16px;
-	background: url("../images/fancybox/fancybox_loading.gif") no-repeat center center transparent;
-}
-.fancybox-inner > .loading { position: static; margin: 0; padding: 0; background-color: transparent; }
-.is-loading {
-	position: relative;
-
-	.loading {
-		z-index: 200;
-		/* Copy the look and feel from the loading inside a fancybox */
-		padding: 15px;
-		background-color: #545454;
-		@include vendor(box-sizing, content-box);
-		@include vendor(border-radius, 20%);
-	}
-
-	&:before {
-		z-index: 100;
-		content: "";
-		background: rgba(0,0,0,.5);
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-	}
+	background: url("../images/loading.gif") no-repeat center center transparent;
 }

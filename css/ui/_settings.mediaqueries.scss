@@ -14,89 +14,12 @@
 
 	body:after { content: "mq portable"; display: none }
 
-	.main-header .sharing-tool-wrapper { text-align: center; margin-top: $inuit-base-spacing-unit }
-
-	.flexgrid { display: block; font-size: 0 }
-	.flexgrid__item { font-size: 1rem; margin-bottom: $inuit-base-spacing-unit--small }
-
-	.filter-lists-wrapper:first-of-type { margin-bottom: $inuit-base-spacing-unit--small }
-
-	.product-page .product-feature-wrapper { border: 0 none; padding-right: 0 }
-
-
-	.main-header { height: auto }
-	.upper-header { margin-bottom: $inuit-base-spacing-unit*2 }
-
-	.product__caption,
-		.show-more-wrapper,
-		.box--product__body,
-		.flex-control-nav
-		{ position: static; }
-
-	.product__caption,
-		.box--product__body
-		{ -webkit-transform: translateY(0); transform: translateY(0) }
-
-	.box--product--main { padding: $inuit-base-spacing-unit--small; background: $brand-second-color;
-		.btn-wrapper { text-align: center; }
-	}
-
-	.main-product { background-image: none }
-
-	.product__caption .btn-wrapper { text-align: center; }
-
-	.categories-wrapper .grid__item { margin-bottom: $inuit-base-spacing-unit; overflow: hidden; min-height: 200px }
-
-	.flexslider--product {
-		.box--highlighted { padding-left: $inuit-base-spacing-unit*2; padding-right: $inuit-base-spacing-unit*2 }
-		h2 { font-size: 50px }
-		.product__caption .btn-wrapper { @include centerObject(absolute, top) }
-	}
-
-	.flex-control-paging { margin-top: $inuit-base-spacing-unit;
-		padding-top: $inuit-base-spacing-unit--small; padding-bottom: $inuit-base-spacing-unit--small;
-	}
-	.flex-control-paging li a { width: 24px; height: 24px; background-color: $brand-tertiary-color;
-		&.flex-active { border-color: $brand-tertiary-color; border-width: 3px; background-color: $main-bg-color }
-	}
-
 }
 
 /* === SMARTPHONE === */
 @include media-query(palm) {
 
 	body:after { content: "mq palm"; display: none }
-
-	h1, .main-heading, .alpha { font-size: 3rem; line-height: 1.1 }
-	h2, .secondary-heading, .beta { font-size: 2rem }
-	h3, .tertiary-heading, .gamma { font-size: 1.5rem }
-	.show-more__heading { font-size: 0.875rem }
-	.btn { font-size: .875rem }
-
-	.more-info .close { top: 10px }
-
-	.list--pin { position: static; }
-	.pin { position: relative; width: 8px; height: 8px; margin-bottom: 1em; top: auto; left: auto; right: auto;
-		&::after {
-			content: attr(data-location); margin-left: 1.5em;
-			position: absolute; left: 0; top: -.5em;
-		}
-	}
-
-	.filter-type-list { display: block }
-	.filter-type-list { text-align: center; }
-	.filter-type-list > li { display: inline-block; }
-
-	.tab-commands > li { vertical-align: middle; }
-	.tab-command { font-size: $milli-size; border-left-width: .15em; line-height: 1.25 }
-
-	.flexslider--product { margin-top: $inuit-base-spacing-unit--small }
-
-	.go--back { top: 70px }
-
-	.filter-list__title .reset { top: -24px; right: -7px; background: transparent; }
-
-	[id="page-title"] { padding-left: $inuit-base-spacing-unit--small }
 
 }
 
@@ -105,25 +28,8 @@
 
 	body:after { content: "mq lap"; display: none }
 
-	/* .pin */[data-location="USA"] { left: 140px; top: 130px }
-	/* .pin */[data-location="Mexico"] { left: 160px; top: 180px }
-	/* .pin */[data-location="Brazil"] { left: 240px; top: 240px }
-	/* .pin */[data-location="Argentina"] { left: 210px; top: 290px }
-	/* .pin */[data-location="France"] { left: 350px; top: 120px }
-	/* .pin */[data-location="UK"] { left: 335px; top: 100px }
-	/* .pin */[data-location="Germany"] { left: 365px; top: 105px }
-	/* .pin */[data-location="Italy"] { left: 365px; top: 135px }
-	/* .pin */[data-location="Romania"] { left: 395px; top: 110px }
-	/* .pin */[data-location="Russia"] { left: 480px; top: 90px }
-	/* .pin */[data-location="Poland"] { left: 380px; top: 95px }
-	/* .pin */[data-location="India"] { left: 500px; top: 170px }
-	/* .pin */[data-location="China"] { left: 585px; top: 105px }
-
 }
 
-@media screen and (max-width: 1300px) {
-	body:after { content: "mq 1300px"; display: none }
-}
 
 /* === iPad landscape specific mq to fix `vh` bug === */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
