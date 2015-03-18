@@ -1,0 +1,24 @@
+/*------------------------------------*\
+    $LIST
+\*------------------------------------*/
+
+.list--numbered { counter-reset: li;
+	> li:before { content: counter(li); counter-increment: li;
+		display: inline-block; vertical-align: middle;
+		width: 1.5rem; height: 1.5rem; line-height: 1.5;
+		background: $brand-color; color: $brand-light-color; border-radius: 100%;
+		text-align: center;
+		font-family: $brand-face-bold;
+		margin-right: $inuit-base-spacing-unit--small;
+	}
+}
+
+.list--separated {
+	> li { position: relative;
+		&:before { content: ""; border-left: 1px solid; width: 1px; position: absolute;
+			top: $inuit-base-spacing-unit--small; bottom: $inuit-base-spacing-unit--small;
+			left: halve($inuit-base-spacing-unit--small);
+		}
+		&:first-child:before { display: none; }
+	}
+}

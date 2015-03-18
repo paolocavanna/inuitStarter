@@ -1,0 +1,25 @@
+/*------------------------------------*\
+    $GRID SETUP
+\*------------------------------------*/
+.layout-wrapper { max-width: $grid-max-width; margin-left: auto; margin-right: auto }
+.layout-wrapper--mini { max-width: $grid-max-width/1.33 }
+.layout-wrapper--maxi { max-width: $grid-max-width*1.33 }
+.layout { font-size: 0; display: block; }
+.layout__item, .pack__item { @include inuit-font-size(($inuit-base-font-size)); position: relative; }
+
+.layout--neg-one-twelfth { margin-left: -8.3333333% }
+
+.flexgrid { @include flexbox(); overflow: hidden; margin-left: -$inuit-layout-gutter }
+.flexgrid__item { @include flex(1); position: relative; margin-left: $inuit-layout-gutter }
+
+/* IE9 fix */
+.no-flexbox {
+	.flexgrid { display: table; width: 100%; table-layout: fixed }
+
+	.flexgrid .grid__item,
+	.flexgrid__item
+	{ display: table-cell; vertical-align: top; width: auto; margin-left: 0;
+		&.box--product--main { vertical-align: middle; }
+		&.box--dark { border-left: 24px solid $main-bg-color }
+	}
+}

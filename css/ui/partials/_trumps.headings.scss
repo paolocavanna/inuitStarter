@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    $HEADINGS
+\*------------------------------------*/
+
+h1, h2, h3, h4, h5, h6,
+	.main-heading,
+	.secondary-heading,
+	.tertiary-heading,
+	.quarter-heading,
+	.fifth-heading,
+	.sixth-heading,
+	.subtitle
+ 	{ font-family: $brand-face-bold }
+h2, .beta, .secondary-heading { line-height: 1.2 }
+.main-heading {  @include inuit-font-size($inuit-heading-size-1) }
+.secondary-heading {  @include inuit-font-size($inuit-heading-size-2) }
+.tertiary-heading {  @include inuit-font-size($inuit-heading-size-3) }
+.quarter-heading {  @include inuit-font-size($inuit-heading-size-4) }
+.fifth-heading {  @include inuit-font-size($inuit-heading-size-5) }
+.sixth-heading{  @include inuit-font-size($inuit-heading-size-6) }
+.subtitle { display: block; @include inuit-font-size(22px); }

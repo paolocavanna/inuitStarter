@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    $TABS
+\*------------------------------------*/
+
+.tab-command,
+	.tab-command *,
+	.tab-content.on { display: block }
+.tab-content { display: none }
+
+.tab-content-wrapper { color: $brand-body-color; background-color: $brand-second-color }
+.tab-commands { display: table; table-layout: fixed; width: 100% }
+.tab-commands > li { display: table-cell; vertical-align: bottom }
+
+.tab-command { font-family: $brand-face-bold; font-size: $inuit-heading-size-5; line-height: 3; @extend .pl-;
+	background: $second-ui-color;
+	border-left: .75em solid $main-bg-color;
+	&.on { background-color: $brand-second-color }
+}
+.tab-commands > li:first-child .tab-command { border-left: 0 }
+.tab-content { @extend .p }
+
+.no-js .tab-content:target { display: block }

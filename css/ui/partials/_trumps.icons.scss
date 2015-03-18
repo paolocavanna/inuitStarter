@@ -1,0 +1,37 @@
+/*------------------------------------*\
+    $ICONS
+\*------------------------------------*/
+
+.icon {
+	font-family: $brand-icon !important;
+	font-weight: 100 !important;
+	font-style: normal !important;
+	font-variant: normal !important;
+	line-height: 1;
+	text-transform: none !important;
+	text-decoration: inherit;
+	text-align: center;
+	color: $brand-light-color;
+	speak: none;
+}
+
+.icon--brand { color: $brand-color }
+
+.icon--boxed {
+	background-color: $brand-color;
+	display: inline-block;
+	border: 1px solid $brand-color;
+	border-radius: 100%;
+	vertical-align: middle;
+	speak: none;
+	width: 1.75em; height: 1.75em;
+	line-height: 1.25;
+}
+
+.icon--big {
+	font-size: 1.5rem;
+}
+
+.icon--huge {
+	font-size: 2.25rem;
+}

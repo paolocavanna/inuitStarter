@@ -1,0 +1,18 @@
+/*------------------------------------*\
+	$PAGE BODY
+\*------------------------------------*/
+
+.main-content__body { padding-top: double($inuit-padding); padding-bottom: double($inuit-padding) }
+
+.modular-grid--center { text-align: center; }
+.modular-grid--complex .pack--small { border-spacing: $inuit-pack-gutter--small 0 }
+
+.hero-section { position: relative; overflow: hidden;  }
+
+.product__caption { left: 0; right: 0; z-index: 5; @include centerObject(absolute, top) }
+
+.list--logo { text-align: center;
+	> li { margin-left: $inuit-margin;
+		&:first-child { margin-left: 0 }
+	}
+}

@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    $NO-TOUCH STYLES
+\*------------------------------------*/
+.no-touch {
+
+	.slide--thumb:hover, a:hover { cursor: pointer; }
+
+	a:not(.btn):hover { border-bottom: 0.14em solid }
+
+	.btn:hover { top: 2px }
+
+	.menu__item {
+		// &.is-active.is-on > a:hover { border-bottom: 0 none }
+		&.is-on > a:hover { border-bottom: 0 none }
+	}
+
+
+	[data-location]:hover {
+		cursor: pointer; z-index: 100;
+		&:after { content: attr(data-location);
+			display: inline-block;
+			position: relative; top: -1.5em; left: -.75em; z-index: 200;
+			padding: .25em; line-height: 1;
+			font-family: $brand-face-bold;
+			color: $brand-dark;
+			background-color: $main-bg-color;
+		}
+	}
+
+	.icon--boxed:hover {
+		color: $brand-color;
+		background-color: $main-bg-color;
+	}
+
+}

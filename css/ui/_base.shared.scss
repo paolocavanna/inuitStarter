@@ -1,0 +1,57 @@
+/*------------------------------------*\
+	$GENERIC
+\*------------------------------------*/
+
+@include fontFace('HelveticaNeueLTStd-Bd','fonts/2C4792_0_0', $weight: bold);
+@include fontFace('HelveticaNeueLT-Roman','fonts/2C4792_1_0');
+@include fontFace('HelveticaNeueLTStd-BdCn','fonts/2C4792_2_0');
+@include fontFace('HelveticaNeueLTStd-Cn','fonts/2C4792_3_0');
+@include fontFace('comauico','fonts/comauico-regular-webfont');
+
+
+*::selection { @include selection }
+*::-moz-selection { @include selection }
+
+html { font-family: $brand-face; background: $main-bg-color; overflow-y: visible }
+
+a { color: inherit; text-decoration: none;
+	@include vendor(transition, all .3s);
+	&:link { word-wrap: break-word }
+}
+[class*="js-"]:focus { outline: 0 none }
+
+iframe, object, video { display: block; width: 100% }
+p:last-child, p:only-child { margin-bottom: 0 }
+
+main, .main-content { position: relative }
+button { -webkit-appearance: none }
+
+.close { position: absolute; right: 0; top: 0; width: 24px; height: 24px; line-height: 24px; border: 1px solid $base-ui-color; border-radius: 100%; text-align: center; z-index: 30 }
+.reset { font-family: $brand-mono; line-height: 1.5; width: 1.5em; height: 1.5em; border-radius: 100%;
+	color: $brand-dark; background: $main-bg-color; text-align: center;
+}
+.hidden, .is-human { display: none !important }
+
+/*------------------------------------*\
+	$PRINT STYLES
+\*------------------------------------*/
+@media print {
+	@page { margin: 0.5cm }
+	* { background-color: transparent !important; color: black !important; box-shadow: none !important; text-shadow: none !important; filter: none !important; -ms-filter: none !important }
+	body { font: normal 10pt/1.4 sans-serif; word-spacing: 1.1pt; letter-spacing: 0.2pt; color: #000; width: 100%; margin: 0; padding: 0 }
+	h1{ font-size: 15pt }
+	h2{ font-size: 13pt }
+	h3{ font-size: 12pt }
+	h4, h5, h6{ font-size: 11pt }
+	blockquote { margin: 1.3em; padding: 1em; font-size: 10pt }
+	img { float: left; margin: 1em 1.5em 1.5em 0 }
+	a img { border: none }
+	img { float: none !important; display: inline !important }
+	a:link, a:visited { font-weight: 700; text-decoration: underline; color: #333 }
+	a:link[href^="http://"]:after, a[href^="http://"]:visited:after { content: " (" attr(href) ") "; font-size: 90% }
+	a[href^="javascript:"]:after, a[href^="#"]:after { content: "" }
+	a[href^="http://"] {color: #000 }
+	p, h2, h3 { orphans: 3; widows: 3 }
+	table { margin: 0; text-align: left }
+	thead { display: table-header-group }
+}

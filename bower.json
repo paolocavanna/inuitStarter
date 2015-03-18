@@ -1,0 +1,41 @@
+{
+  "name": "Brand new site",
+  "version": "1.0.0",
+  "description": "Brand site",
+  "main": "default.hbs",
+  "moduleType": [
+    "globals"
+  ],
+  "authors": [
+    "paolo cavanna"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "inuit-responsive-settings": "~0.1.4",
+    "inuit-widths-responsive": "~0.1.5",
+    "inuit-spacing-responsive": "~0.0.5",
+    "inuit-media": "~0.4.2",
+    "inuit-clearfix": "~0.2.1",
+    "inuit-list-inline": "~0.3.2",
+    "inuit-list-bare": "~0.3.0",
+    "inuit-layout": "~0.3.2",
+    "inuit-buttons": "~0.4.1",
+    "inuit-lists": "~0.1.0",
+    "inuit-images": "~0.3.3",
+    "inuit-flag": "~0.3.2",
+    "inuit-pack": "~0.1.1",
+    "inuit-headings-trumps": "~0.1.2",
+    "inuit-block": "~0.1.2"
+  },
+  "devDependencies": {
+    "inuit-starter-kit": "~0.2.9"
+  }
+}

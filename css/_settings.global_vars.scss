@@ -1,0 +1,22 @@
+/*------------------------------------*\
+	VARS.SCSS
+\*------------------------------------*/
+
+$brand-face:     			"HelveticaNeueLT-Roman", Arial, Helvetica, sans-serif!default;
+$brand-face-bold:     		"HelveticaNeueLTStd-Bd", Arial, Helvetica, sans-serif!default;
+$brand-face-cond:			"HelveticaNeueLTStd-Cn", Arial, Helvetica, sans-serif!default;
+$brand-face-cond-bold:		"HelveticaNeueLTStd-BdCn", Arial, Helvetica, sans-serif!default;
+$brand-face-italic-bold:	"HelveticaNeueLTStd-BdCn", Arial, Helvetica, sans-serif!default;
+$brand-face-italic:			TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+$brand-icon:				"comauico"!default;
+$brand-mono:				"Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
+
+$inuit-heading-size-1:		60px;
+
+$milli-size:        		14px!default;
+$micro-size:        		12px!default;
+
+$opac: 						.8;
+
+$grid-max-width:			60rem;
+$global-border: 			1px solid $base-ui-color;

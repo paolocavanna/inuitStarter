@@ -1,0 +1,9 @@
+/*------------------------------------*\
+    $IMAGES
+\*------------------------------------*/
+
+img { vertical-align: bottom }
+img[src*="void"], img[src*="blank"] { width: 0; height: 0 }
+img[src=""] { display: none }
+
+.img-wrapper { text-align: center; }

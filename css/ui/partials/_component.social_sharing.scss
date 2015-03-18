@@ -1,0 +1,8 @@
+/*------------------------------------*\
+    $SOCIAL SHARING
+\*------------------------------------*/
+
+.list--social > li { margin-right: .5em;
+	&:last-child { margin-right: 0 }
+}
+.sharing-tool { color: $brand-color; font-size: $inuit-heading-size-5; font-family: $brand-face-bold }

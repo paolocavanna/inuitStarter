@@ -1,0 +1,53 @@
+/*------------------------------------*\
+    $FORM
+\*------------------------------------*/
+::-webkit-input-placeholder {
+   @include placeholder;
+}
+
+::-moz-placeholder {
+   @include placeholder;
+}
+
+:-ms-input-placeholder {
+   @include placeholder;
+}
+
+textarea { resize: vertical; vertical-align: top; min-height: 80px; overflow-y: scroll }
+fieldset { border: 0 none; margin: 0; padding: 0 }
+select { color: $brand-light-color; background: transparent; font-family: $brand-face-bold; border: 0; padding: .35em 1em }
+.label { display: block; font-family: $brand-face-bold }
+.label--inline { display: inline-block; font-family: $brand-face }
+label[for="privacy-agreement"] { border: 1px solid transparent }
+.form-el { display: block; width: 100%; line-height: 2; height: 2em; padding-left: .5em;
+	border: 1px solid $brand-body-color;
+	&:focus { box-shadow: 0 8px 3px -4px rgba(0, 0, 0, 0.2); outline: 0 }
+}
+.form-el--secondary { height: 3em; background-color: $second-ui-color; border: 0 none;
+	&:focus { box-shadow: none }
+}
+.form-el--naked { border: 0 none; background: transparent;
+	&::-webkit-input-placeholder { color: $brand-light-color }
+	&:-moz-placeholder { color: $brand-light-color; opacity: 1 !important }
+	&::-moz-placeholder { color: $brand-light-color; opacity: 1 !important; }
+	&:-ms-input-placeholder { color: $brand-light-color }
+}
+.form-el--search { border-bottom: 1px solid  transparent;
+	&:focus { width: 150%; box-shadow: none; border-bottom-color: $brand-light-color;
+		& + .icon--search { right: -50% }
+	}
+}
+.icon--search { font-size: 2em; position: absolute; right: 50px; top: -4px; }
+
+.error { border-color: $error-color !important }
+
+input:-webkit-autofill,
+	textarea:-webkit-autofill,
+	select:-webkit-autofill	{
+		-webkit-box-shadow: inset 0 0 0 100px $main-bg-color;
+		&:focus {
+			-webkit-box-shadow: inset 0 0 0 100px $main-bg-color;
+		}
+	}
+
+:-moz-ui-invalid { box-shadow: none }

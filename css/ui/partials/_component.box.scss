@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    $BOX
+\*------------------------------------*/
+
+.box { padding: $inuit-base-spacing-unit }
+.box--highlighted, .box--dark, .box--product, [class*="box--branded"] { color: $brand-light-color }
+.box--highlighted { background: rgba($brand-second-color, $opac) }
+.box--dark { background-color: $brand-dark }
+.box--semi-dark { background-color: $third-ui-color }
+.box--light { background-color: $brand-light-color }
+.box--product { background-color: $brand-second-color }
+.box--branded { background-color: $brand-color }
+.box--branded--secondary { background-color: $brand-tertiary-color }
+.box--branded--tertiary { background-color: $brand-quarter-color }
+.box--valuable { box-shadow: 0 2px 0 rgba(1,1,1,.55) }
+
+.box--center { text-align: center; }
+
+.box-figure { position: relative; }
+.box-figure__body { position: absolute; left: 0; top: 0; right: 0; bottom: 0 }
