@@ -10,7 +10,7 @@
 
 .loading { width: 25px !important; height: 25px !important; margin: auto !important;
 	border: thin solid $base-ui-color; border-right-color: transparent; border-radius: 100%;
-	@include vendor (animation, spin 1s linear infinite);
+	animation: spin 1s linear infinite;
 }
 
 .no-cssanimation {
