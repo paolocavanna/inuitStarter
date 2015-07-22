@@ -12,14 +12,14 @@
 html { font-family: $brand-face; background: $main-bg-color; overflow-y: visible }
 
 a { color: inherit; text-decoration: none;
-	@include vendor(transition, all .3s);
+	transition: all .3s;
 	&:link { word-wrap: break-word }
 }
 [class*="js-"]:focus { outline: 0 none }
 
 iframe, object, video { display: block; width: 100% }
 
-button { -webkit-appearance: none }
+button { -webkit-appearance: none; transition: all .3s; }
 
 main, .main-content { position: relative }
 
